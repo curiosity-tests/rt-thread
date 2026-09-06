@@ -99,7 +99,7 @@ jobs:
   test:
     runs-on: ubuntu-22.04
     name: ${{ matrix.platform.UTEST }} :${{ matrix.config_file }}
-    if: github.repository_owner == 'curiosity-tests' || github.repository_owner == 'curiosity-tests'
+    if: github.repository_owner == 'RT-Thread' || github.repository_owner == 'RT-Thread'
     strategy:
       fail-fast: false
       matrix:
@@ -482,7 +482,7 @@ jobs:
   # # Post CI status to PR comment
   # post-ci-status:
   #   needs: test
-  #   if: always() && github.event_name == 'pull_request' && github.repository_owner == 'curiosity-tests' || github.repository_owner == 'curiosity-tests'
+  #   if: always() && github.event_name == 'pull_request' && github.repository_owner == 'RT-Thread' || github.repository_owner == 'RT-Thread'
   #   uses: ./.github/workflows/post_ci_status.yml
   #   with:
   #     workflow_name: "utest_auto_run"
