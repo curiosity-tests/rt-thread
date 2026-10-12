@@ -12,8 +12,6 @@ name: manual_trigger_scons_fail_bsp_all.yml
 
 on:
   # Runs at 16:00 UTC (BeiJing 00:00) on the 2st of every month
-  schedule:
-    - cron:  '0 16 2 * *'
   workflow_dispatch:
     # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
     inputs:

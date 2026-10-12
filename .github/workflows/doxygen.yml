@@ -28,8 +28,6 @@ on:
       - 'components/dfs/dfs_v2/src/**'
       - 'components/dfs/dfs_v2/include/**'
       - '.github/workflows/doxygen.yml'
-  schedule:
-    - cron:  '0 16 30 * *'
   workflow_dispatch:
 
 concurrency:
